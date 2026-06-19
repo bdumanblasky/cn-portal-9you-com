@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>九游 · 阅读与整理</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #faf7f2;
+      font-family: system-ui, 'Segoe UI', 'Noto Serif SC', 'Source Han Serif SC', 'Times New Roman', serif;
+      color: #2c2c2c;
+      line-height: 1.75;
+      padding: 2rem 1.5rem;
+    }
+
+    .page {
+      max-width: 760px;
+      margin: 0 auto;
+      background-color: #fffcf9;
+      padding: 2.5rem 2rem 3rem;
+      border-radius: 20px;
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(210, 190, 170, 0.2);
+    }
+
+    .short-opening {
+      font-size: 1.3rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      color: #4b3b2f;
+      border-left: 4px solid #c7aa8b;
+      padding-left: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .opening-char {
+      font-size: 2.2rem;
+      line-height: 1;
+      color: #a68465;
+      display: inline-block;
+      margin-right: 4px;
+    }
+
+    .intro-text {
+      margin-bottom: 2.2rem;
+    }
+
+    .intro-text p {
+      margin-bottom: 1.1rem;
+      text-indent: 2em;
+    }
+
+    .intro-text p:first-of-type {
+      text-indent: 2em;
+    }
+
+    blockquote {
+      background: #f3ede8;
+      border-left: 6px solid #b99a7e;
+      padding: 1rem 1.6rem;
+      margin: 1.6rem 0 2rem 0;
+      border-radius: 0 12px 12px 0;
+      font-style: normal;
+      color: #3d322b;
+      box-shadow: inset 0 1px 3px rgba(0,0,0,0.02);
+    }
+
+    blockquote p {
+      margin: 0.3rem 0;
+      text-indent: 0;
+    }
+
+    .feature-list {
+      background: #f9f5f0;
+      padding: 1.6rem 1.8rem 1.8rem;
+      border-radius: 20px;
+      margin: 2rem 0 2.2rem;
+    }
+
+    .feature-list h3 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: #4f3e30;
+      margin-bottom: 1rem;
+      letter-spacing: 0.3px;
+      border-bottom: 1px dashed #dacbc0;
+      padding-bottom: 0.5rem;
+    }
+
+    .feature-item {
+      display: flex;
+      gap: 0.6rem;
+      margin-bottom: 0.8rem;
+      align-items: baseline;
+    }
+
+    .feature-item::before {
+      content: "—";
+      color: #b18d71;
+      font-weight: 400;
+      flex-shrink: 0;
+    }
+
+    .feature-item strong {
+      font-weight: 600;
+      color: #4d3c2d;
+      min-width: 5.2em;
+    }
+
+    .feature-item span {
+      color: #3d342d;
+    }
+
+    .gentle-closing {
+      margin-top: 2.8rem;
+      padding-top: 1.6rem;
+      border-top: 1px solid #e1d5cb;
+      font-size: 0.98rem;
+      color: #4c3e33;
+    }
+
+    .gentle-closing p {
+      margin-bottom: 0.8rem;
+      text-indent: 0;
+    }
+
+    .gentle-closing a {
+      color: #7a5f48;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      text-decoration-color: #c7b09b;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .gentle-closing a:hover {
+      color: #3e2c1f;
+      text-decoration-color: #7a5f48;
+    }
+
+    .footnote {
+      font-size: 0.85rem;
+      color: #7e7168;
+      margin-top: 2rem;
+      background: #f1ebe5;
+      padding: 0.7rem 1rem;
+      border-radius: 40px;
+      display: inline-block;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 1rem 0.8rem;
+      }
+      .page {
+        padding: 1.8rem 1.2rem 2.2rem;
+      }
+      .short-opening {
+        font-size: 1.1rem;
+        padding-left: 1rem;
+      }
+      .feature-item {
+        flex-direction: column;
+        gap: 0.1rem;
+        margin-bottom: 1rem;
+      }
+      .feature-item strong {
+        min-width: auto;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .short-opening {
+        font-size: 1rem;
+      }
+      .feature-list {
+        padding: 1.2rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="short-opening">
+      <span class="opening-char">“</span>一种聚合，不止于入口。
+    </div>
+
+    <div class="intro-text">
+      <p>在数字内容不断分化的今天，一个能够集中梳理信息、提供稳定浏览路径的服务，反而成为稀缺的锚点。<a href="https://cn-portal-9you.com">九游</a>所承载的，正是这样一层朴素但持续运转的索引功能。它并非某种快速迭代的工具，而更像一座经过整理的信息走廊——没有浮夸的装饰，只有清晰的门牌和可靠的方向。</p>
+      <p>我们常常在大量碎片中寻找自己需要的模块：游戏动态、活动更新、社区反馈、账号服务……这些看似分散的触点，如果能被一种温和且有秩序的方式组织起来，体验便会大幅改善。九游的页面结构正是围绕这种“有序感”展开，它尊重使用者的判断力，也不试图用推送或弹窗打断阅读节奏。</p>
+    </div>
+
+    <blockquote>
+      <p>“好的入口不会喧宾夺主，它仅仅站在该站的地方，然后被需要的人看见。”</p>
+    </blockquote>
+
+    <div class="feature-list">
+      <h3>几个值得留意的细节</h3>
+      <div class="feature-item">
+        <strong>分区清晰</strong>
+        <span>内容模块按主题划分，不堆叠，不交叉，每一块都有明确的归属。</span>
+      </div>
+      <div class="feature-item">
+        <strong>视觉克制</strong>
+        <span>没有大面积闪烁或强对比色块，文字与背景的搭配偏柔和，适合长时间浏览。</span>
+      </div>
+      <div class="feature-item">
+        <strong>路径稳定</strong>
+        <span>所有主要链接和导航均保持长期一致，减少因改版带来的迷失感。</span>
+      </div>
+      <div class="feature-item">
+        <strong>更新提示</strong>
+        <span>页面内嵌的公告区域会以低调方式展示最新变化，而非用弹窗强制打断。</span>
+      </div>
+    </div>
+
+    <div class="gentle-closing">
+      <p>如果你曾有过这样的体验——打开某个页面后，不需要思考“下一步该点哪里”，而是自然地被内容引导，那么这种设计背后一定有许多被隐藏起来的整理工作。九游所做的，无非是将这些整理保持在一个安静、连贯的节奏中。</p>
+      <p>它不是一个需要被记住的名字，而是一个可以偶尔回来看看的地方。当你想梳理一下与游戏相关的信息脉络时，不妨打开 <a href="https://cn-portal-9you.com">九游</a>，从那里开始。</p>
+    </div>
+
+    <div class="footnote">
+      本文仅作介绍与整理，不构成任何运营承诺。
+    </div>
+  </div>
+</body>
+</html>

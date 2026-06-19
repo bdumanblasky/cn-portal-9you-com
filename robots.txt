@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bdumanblasky.github.io/cn-portal-9you-com/sitemap.xml
